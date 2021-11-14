@@ -39,10 +39,10 @@ public class ProgramPersonalCard{
 		System.out.println("Enter your position: ");
 		myPosition = console.nextLine();
 		
-		PersonCard Aruan = new PersonCard(myName, mySurname, myPosition);
-		System.out.println("Your name is " + Aruan.getName());
-		System.out.println("Your surname is " + Aruan.getSurname());
-		System.out.println("Your position is " + Aruan.getPosition());
+		PersonCard somePerson = new PersonCard(myName, mySurname, myPosition);
+		System.out.println("Your name is " + somePerson.getName());
+		System.out.println("Your surname is " + somePerson.getSurname());
+		System.out.println("Your position is " + somePerson.getPosition());
 
 	}
 }
