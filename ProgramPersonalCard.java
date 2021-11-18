@@ -6,10 +6,7 @@ class PersonCard{
 	private String position;
 
 
-  public PersonCard(){
-  
-
-  }
+  public PersonCard(){}
 
   public PersonCard(String name, String surname, String position){
 		this.name = name;
