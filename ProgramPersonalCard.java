@@ -6,17 +6,37 @@ class PersonCard{
 	private String position;
 
 
-	public PersonCard(String name, String surname, String position){
+  public PersonCard(){
+  
+
+  }
+
+  public PersonCard(String name, String surname, String position){
 		this.name = name;
 		this.surname = surname;
 		this.position = position;	
 	}
+	
+
+  public void setName(String name){
+    this.name = name;
+  }
+
 	public String getName(){
 		return this.name;
 	}
+
+  public void setSurname(String surname){
+    this.surname = surname;
+  }
+
 	public String getSurname(){
 		return this.surname;
 	}
+
+  public void setPosition(String position){
+    this.position = position;
+  }
 
 	public String getPosition(){
 		return this.position;
@@ -24,22 +44,23 @@ class PersonCard{
 
 }
 
-public class ProgramPersonalCard{
+public class Main{
 
 	public static void main(String[] agrs) {
-		String myName;
-		String mySurname;
-		String myPosition;
+    PersonCard somePerson = new PersonCard();
 
 		Scanner console = new Scanner(System.in);
+
 		System.out.println("Enter your name: ");
-		myName = console.nextLine();
+		somePerson.setName(console.nextLine());
+
 		System.out.println("Enter your surname: ");
-		mySurname = console.nextLine();
+		somePerson.setSurname(console.nextLine());
+
 		System.out.println("Enter your position: ");
-		myPosition = console.nextLine();
+		somePerson.setPosition(console.nextLine());
 		
-		PersonCard somePerson = new PersonCard(myName, mySurname, myPosition);
+		
 		System.out.println("Your name is " + somePerson.getName());
 		System.out.println("Your surname is " + somePerson.getSurname());
 		System.out.println("Your position is " + somePerson.getPosition());
