@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class main {
+class NumberGame {
     public static void main(String[] args) {
         System.out.println("Test program");        
         
