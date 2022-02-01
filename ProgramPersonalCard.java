@@ -41,7 +41,7 @@ class PersonCard{
 
 }
 
-public class Main{
+public class ProgramPersonalCard {
 
 	public static void main(String[] agrs) {
     PersonCard somePerson = new PersonCard();
